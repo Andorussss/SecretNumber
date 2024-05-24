@@ -1,0 +1,135 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'VT323', monospace;
+    background-color: #4A3333;
+}
+p{
+    margin: 0;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    margin-bottom: 20px;
+}
+.button{
+    font-family: 'VT323', monospace;
+    font-size: 30px;
+    padding: 3px 30px;
+    background-color: #fff;
+    border: none;
+}
+.interval{
+    color:#fff;
+    font-size: 25px;
+    margin: 0;
+}
+.main-header{
+    font-size: 90px;
+    color:#fff;
+    text-align: center;
+}
+.number-block{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+    position: relative;
+}
+.number-block::before{
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 1px;
+    right: 150px;
+    background-color: #fff;
+}
+.main{
+    overflow-x:hidden;
+}
+.number-block::after{
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 1px;
+    left:150px;
+    background-color: #fff;
+}
+.number{
+    font-size: 100px;
+    color:#4A3333;
+}
+.input-block{
+    display: flex;
+    flex-direction: column;
+}
+.input-number{
+    margin-bottom: 40px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    width: 240px;
+    text-align: center;
+    height: 80px;
+    font-size: 45px;
+    color:#fff;
+    font-family: 'VT323', monospace;
+}
+.input-number::placeholder{
+    background-color: #fff;
+    font-size: 30px;
+}
+.input-number:focus{
+   outline: none;
+}
+.info-block{
+    color:#fff;
+    font-size: 30px;
+    width: 240px;
+}
+.status{
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.text{
+    margin-bottom: 30px;
+    position: relative;
+    left: 40px;
+}
+.text--score::before{
+    content: '';
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/medal.svg");
+}
+.text--h_score::before{
+    content: '';
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/start.svg");
+}
+.button:hover{
+    transform: scale(1.01);
+    background-color: #d0c8ba;
+}
